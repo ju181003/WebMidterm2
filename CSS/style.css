@@ -1,0 +1,17 @@
+.botonHome{
+    position:relative;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.body{
+    background-color:#183c5c;
+}
+
+.title{
+    text-align: center;
+    position:relative;
+    margin-top: 30px;
+    color: #ffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

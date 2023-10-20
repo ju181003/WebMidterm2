@@ -15,3 +15,15 @@
     color: #ffff;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+.grid{
+    position:relative;
+    margin-top: 80px;
+    color:#ffff;
+}
+
+.buttLeft{
+    position:relative;
+    margin-left: 20px;
+    margin-top: 800px;
+}

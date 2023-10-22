@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css"  type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title><%=superhero.name%></title>
+</head>
+<body class="body">
+    <h1 class="title">Superheroe-pedia!</h1>
+    <div class="container-fluid text-center">
+      <div class="row justify-content-between align-items-center">
+        <div class="col">
+          <button type="button" class="btn btn-secondary btn-lg" onclick="window.location.href = '/'">Home</button>
+        </div>
+        <div class="col move-buttons"> 
+          <button type="button" class="btn btn-outline-warning arrow" onclick="window.location.href = '<%=preid%>'"><</button>
+          <button type="button" class="btn btn-outline-warning arrow" onclick="window.location.href = '<%=nextid%>'">></i></button>
+        </div>
+      </div> 
+    </div>  
+    <div class="info">
+      <div class="row ">
+        <div class="col-12 col-sm-5 ">
+          <div class="img-info">
+            <img src=<%= superhero.images.lg %> class="card-img-top" alt="<%= superhero.name %> image">
+          </div>
+        </div>
+      
+        <div class="col-12 col-sm-7 caracter-info">
+          <h1>Name: <%=superhero.name%></h1>
+          <h5>Id: <%=superhero.id%></h5>
+          <h5>
+            Full name: 
+            <%if(superhero.biography.fullName!=="") {%>
+              <%= superhero.biography.fullName %>
+            <% }else {%>
+              No full name
+            <%}%>   
+            </h5>
+            <h5>Powerstats:   </h5>
+            <ul>
+              <li>Intelligence: <%=superhero.powerstats.intelligence%></li>
+              <li>Strength: <%=superhero.powerstats.strength%></li>
+              <li>Speed: <%=superhero.powerstats.speed%></li>
+              <li>Durability: <%=superhero.powerstats.durability%></li>
+              <li>Power: <%=superhero.powerstats.power%></li>
+              <li>Combat: <%=superhero.powerstats.combat%></li>
+            </ul>
+            <h6>  Place of birth: <%=superhero.biography.placeOfBirth%>  </h6>
+            <h6>Aliases:</h6>
+            <ul>
+              <% for(var i=0; i<superhero.biography.aliases.length; i++) {%>
+                <li>
+                  <%= superhero.biography.aliases[i] %>
+                </li>
+                <% } %>
+              </ul>
+            <h6>Gender: <%= superhero.appearance.gender%></h6>
+            <h6>Race: <%= superhero.appearance.race%></h6>
+            <h6>Height: <%= superhero.appearance.height%></h6>
+            <h6>Weight: <%= superhero.appearance.weight%></h6>
+            <h6>EyeColor: <%= superhero.appearance.eyeColor%></h6>
+            <h6>HairColor: <%= superhero.appearance.hairColor%></h6>
+            <h6>Group affiliation: <%= superhero.connections.groupAffiliation%></h6>
+        </div>
+      </div>
+      
+    </div>
+
+
+    
+
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+.body{
+    background-color:#183c5c;
+}
+
+
+.home{
+    margin-bottom: 35px;
+}
+
+.botonHome{
+    position:relative;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.title{
+    text-align: center;
+    position:relative;
+    margin-top: 30px;
+    color: #ffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1{
+    color: red;
+}
+
+.nav-var{
+    
+}
+.move-buttons button{
+    margin-right: 10px;
+}
+
+
+.superhero_info{
+    background-color: #ffff;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+.superhero_info img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.superhero_info h5{
+   margin: 10px;
+}
+.superhero_info a{
+   margin: 10px;
+}
+
+
+
+.img-info{
+   width: 360px;
+   padding: 20px;
+   margin: auto;
+}
+.info{
+    margin: auto;
+}
+.caracter-info{
+    /* margin-left: 20PX; */
+    padding: 20px;
+    /* padding-left: 30px; */
+    color:white
+}
+@media screen and (max-width: 870px) {
+    .img-info{
+        width: 270px;
+        padding: 20px;
+     }
+     
+}
+
+@media screen and (max-width: 600px) {
+    .img-info{
+        width: 200px;
+        padding: 20px;
+     }
+     
+}
+
+  
+
+.buttLeft{ 
+    position:relative;
+    margin-left: 20px;
+    margin-top: 800px;
+}
+
